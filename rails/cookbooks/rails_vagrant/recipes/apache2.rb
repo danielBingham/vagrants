@@ -8,6 +8,15 @@ package 'apache2' do
     action :install
 end
 
+# We need to make sure that www-data owns this directory, because
+# passenger will need write access to it.
+directory '/var/www' do
+  owner 'www-data'
+  group 'www-data'
+  mode  '0755'
+  action :create
+end
+
 apt_repository 'passenger' do
   uri 'https://oss-binaries.phusionpassenger.com/apt/passenger'
   components ['main']
