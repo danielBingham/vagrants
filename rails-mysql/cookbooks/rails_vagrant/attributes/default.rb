@@ -12,10 +12,10 @@ default['rails_vagrant']['config_directory'] = '/srv/www/application/config'
 #   Apache2 Configuration 
 #######################################
 
-default['rails_vagrant']['server_name'] = 'foresttofarm.local'
-default['rails_vagrant']['server_alias'] = 'www.foresttofarm.local'
+default['rails_vagrant']['server_name'] = 'application.local'
+default['rails_vagrant']['server_alias'] = 'www.applicatoin.local'
 
-default['rails_vagrant']['webmaster_email'] = 'webmaster@foresttofarm.org'
+default['rails_vagrant']['webmaster_email'] = 'webmaster@application.local'
 default['rails_vagrant']['document_root'] = '/srv/www/application/public'
 
 
@@ -31,16 +31,15 @@ default['rails_vagrant']['document_root'] = '/srv/www/application/public'
 default['rails_vagrant']['database']['root_password'] = 'password'
 default['rails_vagrant']['database']['host'] = '127.0.0.1'
 
-default['rails_vagrant']['database']['development']['name'] = 'local_foresttofarm'
+default['rails_vagrant']['database']['development']['name'] = 'local_application'
 default['rails_vagrant']['database']['development']['username'] = 'developer'
 default['rails_vagrant']['database']['development']['password'] = 'developing'
 
-default['rails_vagrant']['database']['test']['name'] = 'test_foresttofarm'
+default['rails_vagrant']['database']['test']['name'] = 'test_application'
 default['rails_vagrant']['database']['test']['username'] = 'tester'
 default['rails_vagrant']['database']['test']['password'] = 'testing'
 
 default['rails_vagrant']['database']['data_directory'] = '/srv/www/application/data/'
 default['rails_vagrant']['database']['schema_file'] = 'schema.sql'
-default['rails_vagrant']['database']['data_file'] = 'data.csv'
-default['rails_vagrant']['database']['test_table'] = 'plants'
+default['rails_vagrant']['database']['test_table'] = 'users'
 
