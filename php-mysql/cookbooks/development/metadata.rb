@@ -1,0 +1,13 @@
+name 'development'
+maintainer 'Daniel Bingham'
+maintainer_email 'dbingham@theroadgoeson.com'
+license 'MIT Open Source'
+description 'Provisions a PHP/Apache2/MySQL Vagrant vm'
+long_description 'Provisions a vagrant development environment on an Ubuntu 14.04 vm to use PHP/Apache2/MySQL with Composer for dependency management.'
+version '0.1.0'
+
+depends 'apt',  '~> 4.0.1'
+depends 'mysql', '~> 7.0.0'
+depends 'mysql2_chef_gem', '~> 1.1.0'
+depends 'database', '~> 5.1.2'
+depends 'composer', '~> 2.3.0'
