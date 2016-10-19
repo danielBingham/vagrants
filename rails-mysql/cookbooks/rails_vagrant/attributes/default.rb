@@ -39,7 +39,10 @@ default['rails_vagrant']['database']['test']['name'] = 'test_application'
 default['rails_vagrant']['database']['test']['username'] = 'tester'
 default['rails_vagrant']['database']['test']['password'] = 'testing'
 
-default['rails_vagrant']['database']['data_directory'] = '/srv/www/application/data/'
-default['rails_vagrant']['database']['schema_file'] = 'schema.sql'
-default['rails_vagrant']['database']['test_table'] = 'users'
+# If you want to load an existing database schema file into the newly created
+# database uncomment these and set them to appropriate values.  You'll also
+# need to uncomment the line that loads database_schema file in default.
+# default['rails_vagrant']['database']['data_directory'] = '/srv/www/application/data/'
+# default['rails_vagrant']['database']['schema_file'] = 'schema.sql'
+# default['rails_vagrant']['database']['test_table'] = 'users'
 

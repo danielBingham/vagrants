@@ -11,7 +11,9 @@ include_recipe  'rails_vagrant::apache2'
 include_recipe  'rails_vagrant::database'
 include_recipe  'rails_vagrant::rails'
 include_recipe  'rails_vagrant::configuration'
-include_recipe  'rails_vagrant::database_schema'
+# If you want to load an existing sql schema file into the newly
+# create database, uncomment this line.
+# include_recipe  'rails_vagrant::database_schema'
 include_recipe  'rails_vagrant::virtual_host'
 # If you're using Grunt as a task runner, uncomment the
 # lines below to install it and run npm install.
