@@ -37,6 +37,10 @@ execute 'Enable ' + node['development']['server_name'] do
     command 'a2ensite ' + node['development']['server_name']
 end
 
+execute 'Enable mod_rewrite' do
+  command 'a2enmod rewrite'
+end
+
 execute 'Restart apache2' do
     command 'service apache2 restart'
 end
